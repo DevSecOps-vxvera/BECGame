@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)file:///Users/victor-x/Documents/ChatGPT/VxV%20Clases/bec-ruta-ataque/index.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c1726">
+  <meta name="description" content="Juego educativo para rastrear un caso didáctico de Business Email Compromise, seleccionar evidencia, evaluar transacciones y comparar controles.">
+  <title>Rastrea la ruta · Caso BEC</title>
+  <link rel="stylesheet" href="./Rastrea la ruta · Caso BEC_files/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="file:///Users/victor-x/Documents/ChatGPT/VxV%20Clases/bec-ruta-ataque/index.html#inicio" aria-label="Inicio"><span class="brand-mark">R</span><span>RASTREA <b>LA RUTA</b></span></a>
+    <nav aria-label="Navegación principal"><a href="file:///Users/victor-x/Documents/ChatGPT/VxV%20Clases/bec-ruta-ataque/index.html#caso">El caso</a><a href="file:///Users/victor-x/Documents/ChatGPT/VxV%20Clases/bec-ruta-ataque/index.html#juego">Jugar</a><a href="file:///Users/victor-x/Documents/ChatGPT/VxV%20Clases/bec-ruta-ataque/index.html#fuentes">Fuentes</a></nav>
+    <span class="offline-tag"><i></i> Actividad interactiva</span>
+  </header>
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">SIMULACIÓN DE RESPUESTA A INCIDENTES · 15–20 MIN</p>
+        <h1>Rastrea una<br><em>ruta de ataque.</em></h1>
+        <p class="hero-lede">Un correo creíble. Un buzón comprometido. Dos pagos en riesgo. Sigue las señales, decide qué revisar y elige cómo contener el caso.</p>
+        <a class="cta" href="file:///Users/victor-x/Documents/ChatGPT/VxV%20Clases/bec-ruta-ataque/index.html#juego">Iniciar actividad <span>↓</span></a>
+      </div>
+      <div class="hero-graphic" aria-hidden="true"><div class="route route-a"></div><div class="route route-b"></div><div class="route-node node-mail">✉</div><div class="route-node node-eye">◉</div><div class="route-node node-bank">$</div><div class="route-node node-shield">✓</div><div class="route-core">BEC<small>rastrear<br>· contener</small></div><span class="route-label label-one">BUZÓN</span><span class="route-label label-two">TELEMETRÍA</span><span class="route-label label-three">PAGOS</span></div>
+    </section>
+    <section id="caso" class="case-intro">
+      <div class="section-heading"><div><p class="eyebrow">EL ESCENARIO</p><h2>La solicitud parece legítima.</h2></div><span class="case-badge">CASO DIDÁCTICO</span></div>
+      <div class="case-grid">
+        <article class="case-card case-main"><p class="case-time">MARTES · 09:14</p><h3>“Actualizamos nuestra cuenta bancaria”</h3><p><b>BEC (Business Email Compromise)</b> es un fraude que aprovecha la suplantación o el compromiso de correo empresarial para inducir pagos o cambios de cuenta. En este caso, dentro de un hilo sobre una factura de <b>Comercial Andina Ltda.</b>, un aprobador recibe de la cuenta de un analista de AP una solicitud urgente para cambiar la cuenta bancaria del proveedor. El analista confirma después que no envió ese mensaje y que su buzón fue comprometido.</p><p>Seguridad encuentra un inicio de sesión inusual y una regla de reenvío externa creada esa mañana. El cambio de datos bancarios está guardado en el ERP y dos pagos al mismo proveedor esperan aprobación. <b>Ningún pago ha sido liberado todavía.</b></p></article>
+        <aside class="fact-stack"><div class="fact"><span>01</span><p><b>Acceso inicial</b><br>Cómo obtuvo el atacante la sesión sigue bajo investigación.</p></div><div class="fact"><span>02</span><p><b>Actividad confirmada</b><br>Cuenta cloud válida y regla de reenvío en el buzón.</p></div><div class="fact"><span>03</span><p><b>Objetivo inmediato</b><br>Desviar pagos pendientes al proveedor.</p></div></aside>
+      </div>
+      <div class="route-strip"><span>RUTA OBSERVABLE</span><b>Sesión inusual</b><i>→</i><b>Regla de reenvío</b><i>→</i><b>Conversación vigilada</b><i>→</i><b>Cambio bancario</b><i>→</i><b>Pago en riesgo</b></div>
+      <div class="notice"><span class="notice-icon">i</span><p><b>Mapeo prudente:</b> el caso confirma uso de cuenta cloud válida (<a href="https://attack.mitre.org/techniques/T1078/004/" target="_blank" rel="noopener">MITRE T1078.004</a>) y regla de reenvío (<a href="https://attack.mitre.org/techniques/T1114/003/" target="_blank" rel="noopener">T1114.003</a>). No afirmamos que hubiera phishing con enlace: el vector de acceso aún se investiga. <a href="https://attack.mitre.org/techniques/T1657/" target="_blank" rel="noopener">T1657 Financial Theft</a> describiría el impacto si el dinero llegara a transferirse.</p></div>
+    </section>
+    <section id="juego" class="game-section">
+      <div class="section-heading"><div><p class="eyebrow">TOMA DECISIONES</p><h2>Tu investigación empieza ahora.</h2><p>Completa las tres decisiones. Puedes volver a una etapa anterior antes de cerrar el caso.</p></div><div class="score-card"><span>PROGRESO</span><b id="progress-label">0 / 3</b></div></div>
+      <div class="stepper" role="list" aria-label="Etapas del juego"><button class="step-dot active" data-step="0" role="listitem" aria-current="step"><span>1</span> Evidencia</button><button class="step-dot" data-step="1" role="listitem" disabled="" aria-current="false"><span>2</span> Transacciones</button><button class="step-dot" data-step="2" role="listitem" disabled="" aria-current="false"><span>3</span> Controles</button></div>
+      <div id="game-panel" class="game-panel" aria-live="polite"><div class="panel-head"><p class="eyebrow">DECISIÓN 1 · SELECCIONA VARIAS</p><h3>¿Qué evidencia revisarías primero?</h3><p>Elige la telemetría que permite confirmar acceso, rastrear cambios y detener los pagos. Envía tu selección para ver cómo se complementan las fuentes.</p></div><div class="choice-grid"><label class="choice "><input type="checkbox" name="evidence" value="identity"><span class="choice-tag strong">CLAVE</span><b>Inicio de sesión y auditoría de identidad</b><small>IP y ubicación inusuales, método MFA, riesgo de inicio de sesión, sesiones y cambios de autenticación del analista.</small></label><label class="choice "><input type="checkbox" name="evidence" value="mailbox"><span class="choice-tag strong">CLAVE</span><b>Auditoría del buzón y reglas</b><small>Creación o modificación de una regla de reenvío, destino externo, mensajes afectados y cambios hechos durante la sesión.</small></label><label class="choice "><input type="checkbox" name="evidence" value="erp"><span class="choice-tag strong">CLAVE</span><b>ERP: maestro de proveedor y lote de pagos</b><small>Quién cambió la cuenta bancaria, cuándo se aprobó, qué facturas usan el dato y en qué estado están los pagos.</small></label><label class="choice "><input type="checkbox" name="evidence" value="headers"><span class="choice-tag strong">CONTEXTO</span><b>Correo original y encabezados completos</b><small>Remitente, ruta, marcas de tiempo y resultados SPF, DKIM y DMARC; útil para correlacionar el hilo y preservar evidencia.</small></label><label class="choice "><input type="checkbox" name="evidence" value="edr"><span class="choice-tag ">COMPLEMENTARIA</span><b>Telemetría EDR del equipo del analista</b><small>Puede ayudar si el equipo también estuvo comprometido, pero el escenario no muestra aún actividad de malware en el endpoint.</small></label><label class="choice "><input type="checkbox" name="evidence" value="weather"><span class="choice-tag ">NO PERTINENTE</span><b>Pronóstico del tiempo de la oficina</b><small>No ayuda a explicar el acceso al buzón ni a determinar qué pagos dependen del dato bancario modificado.</small></label></div><div class="panel-footer"><p class="hint">Puedes elegir más de una. Relaciona cada fuente con una pregunta del incidente.</p><button class="primary-button" id="submit-evidence" type="button">Analizar evidencia →</button></div></div>
+      <div class="game-bottom"><button id="restart" class="text-button" type="button">Reiniciar actividad</button><span>Actividad sin calificación; el objetivo es justificar el razonamiento.</span></div>
+    </section>
+    <section class="learning"><div><p class="eyebrow">IDEA PARA LLEVAR</p><h2>La evidencia acota<br>el alcance.</h2></div><p>Una solicitud sospechosa no basta para atribuir todo el incidente. Correlaciona identidad, buzón, correo y pagos. Después verifica directamente con el proveedor por un contacto registrado antes del incidente, bloquea cambios no validados y conserva los registros para responder.</p></section>
+    <section id="fuentes" class="sources"><p class="eyebrow">FUENTES OFICIALES</p><h2>Para profundizar</h2><div class="source-grid">
+      <article><b>FBI · Business Email Compromise</b><p>Describe fraudes donde un mensaje aparenta provenir de una fuente conocida y recomienda verificar cambios de cuenta por un canal conocido.</p><a href="https://www.fbi.gov/how-we-can-help-you/common-frauds-and-scams/business-email-compromise" target="_blank" rel="noopener">Leer guía del FBI ↗</a></article>
+      <article><b>MITRE ATT&amp;CK · cuentas cloud</b><p>T1078.004: uso adversario de cuentas válidas en servicios cloud; no identifica por sí solo cómo se obtuvieron.</p><a href="https://attack.mitre.org/techniques/T1078/004/" target="_blank" rel="noopener">Consultar T1078.004 ↗</a></article>
+      <article><b>MITRE ATT&amp;CK · reenvío de correo</b><p>T1114.003: reglas usadas para reenviar mensajes. En la simulación aparece en los registros de auditoría.</p><a href="https://attack.mitre.org/techniques/T1114/003/" target="_blank" rel="noopener">Consultar T1114.003 ↗</a></article>
+    </div><p class="copyright">Escenario y decisiones redactados con fines educativos. Organización, proveedor, importes y registros son ficticios. ATT&amp;CK es una base de conocimiento de comportamientos observados, no una secuencia universal de ataque.</p></section>
+  </main>
+  <footer><span>RASTREA LA RUTA · BEC</span><span>Simulación para formación en ciberseguridad.</span><a href="file:///Users/victor-x/Documents/ChatGPT/VxV%20Clases/bec-ruta-ataque/index.html#inicio">Volver arriba ↑</a></footer>
+  <script src="./Rastrea la ruta · Caso BEC_files/app.js"></script>
+
+
+</body></html>
